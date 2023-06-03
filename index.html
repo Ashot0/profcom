@@ -4,6 +4,9 @@
 <head>
 	<title>Profcom</title>
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
 	<!-- Отключает принудительную ссылку у номера телефона на iOS -->
 	<meta name="format-detection" content="telephone=no">
@@ -55,16 +58,42 @@
 </head>
 
 <body>
+	<div class="tiangle__1"></div>
 	<div class="wrapper">
 		<header class="header">
-
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li> <a data-goto=".page__section_1" class="menu__link" href="#">Про нас</a></li>
+					<li> <a data-goto=".page__section_1" class="menu__link" href="#">Чим ми займаємося</a></li>
+					<li> <a data-goto=".page__section_1" class="menu__link" href="#">Наша команда</a></li>
+					<li> <a data-goto=".page__section_1" class="menu__link" href="#">Документи</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main class="main">
 			<section class="greating-page">
-
+				<h1 class="greating-page__title title">Первинна профспілкова організація студентів Національного
+					Університету “Одеська Політехніка”</h1>
+				<div class="greating-page__img"><img src="./img/Title/title.jpg" alt=""></div>
 			</section>
 			<section class="about-us">
-
+				<h2 class="about-us__title title">Про нас</h2>
+				<div class="about-us__box">
+					<div class="about-us__img"><img src="/img/about us/o nas.jpg" alt=""></div>
+					<div class="about-us__text text">
+						<p>Первинна профспілкова організація студентів Національного Університету “Одеська Політехніка”
+							на чолі з профкомом
+							студентів представляє та відстоює твої законні права та інтереси перед адміністрацією
+							інститутів, університету, в
+							органах державної влади та місцевого самоврядування, а також з іншими об’єднаннями громадян.
+							Усім студентам, які у
+							процесі навчання оволодівають знаннями та набувають певного життєвого досвіду, потрібен
+							захист, оскільки самостійно
+							відстояти свої права часто дуже важко. Профком студентів Одеської Політехніки може впевнено
+							запропонувати студентові
+							свою підтримку та захист.</p>
+					</div>
+				</div>
 			</section>
 			<section class="what-we-do">
 
@@ -97,7 +126,7 @@
 		</footer>
 	</div>
 
-	<script src="/js/script.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

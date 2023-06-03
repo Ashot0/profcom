@@ -84,3 +84,151 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
+@media (min-width: 1920px) {
+  .wrapper {
+    padding: 0 208px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper {
+    padding: 0 150px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0 62px;
+  }
+}
+@media (max-width: 768x) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+body {
+  background-color: #272b2c;
+  color: #eef3f4;
+  font-family: "Montserrat", sans-serif;
+}
+body a {
+  color: #eef3f4;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+}
+
+.menu__list {
+  display: flex;
+  width: 758px;
+  justify-content: space-between;
+}
+
+.greating-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greating-page__title {
+  margin-top: 32px;
+  margin-bottom: 6%;
+  max-width: 1448px;
+}
+
+.tiangle__1 {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  z-index: -1;
+  background-image: url(../img/Background/triangle\ 1.png);
+  background-repeat: no-repeat;
+  background-position: right -170px top -437px;
+}
+
+.greating-page__img {
+  max-width: 992px;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 156px;
+}
+.greating-page__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us__title {
+  margin-bottom: 88px;
+}
+
+.about-us__box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1504px;
+  margin-bottom: 156px;
+}
+
+@media (max-width: 1440px) {
+  .about-us__box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about-us__img {
+  border-radius: 30px;
+  max-width: 736px;
+  max-height: 525px;
+  overflow: hidden;
+}
+.about-us__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.about-us__text {
+  max-width: 736px;
+  padding: 8% 0 0 9%;
+  max-height: 525px;
+  font-size: 1.285rem;
+}

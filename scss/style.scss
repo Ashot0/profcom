@@ -164,6 +164,7 @@ body {
 
 .about-us__box {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	max-width: 1504px;
 	margin-bottom: 156px;
@@ -172,6 +173,7 @@ body {
 	.about-us__box {
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 	}
 }
 .about-us__img {
@@ -191,12 +193,18 @@ body {
 }
 .about-us__text {
 	max-width: 736px;
-	padding: 8% 0 0 9%;
+	padding-top: 8%;
 	max-height: 525px;
 	font-size: 1.285rem;
 	position: relative;
 	z-index: $z-wwd;
 	text-align: center;
+}
+
+@media (min-width: 1440px) {
+	.about-us__text {
+		padding-left: 9%;
+	}
 }
 
 .what-we-do {
@@ -410,3 +418,7 @@ body {
 .footer__title_contacts {
 	margin-bottom: 4px;
 }
+
+// @media (max-width: 1440px){
+
+// }

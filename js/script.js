@@ -37,6 +37,7 @@ if (isMobile.any()) {
 }
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+console.log(menuLinks)
 if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener("click", onMenuLinkClick);
@@ -46,7 +47,7 @@ if (menuLinks.length > 0) {
 		const menuLink = e.target;
 		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
-			const gotoBlockValue = gotoBlock.getBoundingCleintRect().top + pageYOffset;
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
 
 			window.scrollTo({
 				top: gotoBlockValue,

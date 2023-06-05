@@ -56,7 +56,7 @@ body {
 .tiangle__1 {
 	position: absolute;
 	width: 100%;
-	height: 200%;
+	height: 1000px;
 	z-index: -1;
 	background-image: url(../img/Background/triangle\ 1.png);
 	background-repeat: no-repeat;
@@ -65,7 +65,7 @@ body {
 .tiangle__2 {
 	position: absolute;
 	width: 100%;
-	height: 500%;
+	height: 2500px;
 	z-index: 1;
 	background-image: url(../img/Background/triangle\ 2.png);
 	background-repeat: no-repeat;
@@ -74,7 +74,7 @@ body {
 .tiangle__3 {
 	position: absolute;
 	width: 100%;
-	height: 600%;
+	height: 4000px;
 	z-index: 1;
 	background-image: url(../img/Background/triangle\ 3.png);
 	background-repeat: no-repeat;
@@ -83,7 +83,7 @@ body {
 .tiangle__4 {
 	position: absolute;
 	width: 100%;
-	height: 600%;
+	height: 5000px;
 	z-index: 1;
 	background-image: url(../img/Background/triangle\ 4.png);
 	background-repeat: no-repeat;
@@ -276,6 +276,9 @@ body {
 	padding: auto;
 	margin: 0 80px 156px 80px;
 }
+._short {
+	margin: 0 8px 156px 8px;
+}
 
 .team__box {
 	display: flex;
@@ -325,32 +328,76 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 156px;
 }
 .docs__links {
 	width: 979px;
-	a,
-	p {
-		font-weight: 800;
-		font-size: 18px;
-		line-height: 130%;
-	}
-	p {
-		position: relative;
-		padding-left: 15px;
-		span {
-			display: inline-block;
-			padding-right: 7px;
-		}
-		margin-bottom: 16px;
-	}
-	a {
-		text-decoration: underline;
-	}
-
 	li {
 		margin-bottom: 32px;
 	}
 }
+.docs__text {
+	position: relative;
+	padding-left: 15px;
+	span {
+		display: inline-block;
+		padding-right: 7px;
+	}
+	margin-bottom: 16px;
+}
+.docs__link,
+.docs__text {
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.docs__link {
+	text-decoration: underline;
+}
 
 .footer {
+	background-color: #eef3f4;
+	color: #272b2c;
+	margin: 0 -10%;
+	padding: 0 10%;
+	overflow: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 165px;
+}
+.footer__box {
+	width: 1504px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer__address {
+}
+.footer__title {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 130%;
+	letter-spacing: 0.01em;
+	margin-bottom: 8px;
+}
+.footer__text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 130%;
+}
+.footer__icons {
+	display: flex;
+	align-items: center;
+}
+.footer__telegram {
+	margin-right: 17.67px;
+}
+.footer__instagram {
+}
+.footer__contacts {
+	text-align: end;
+}
+.footer__title_contacts {
+	margin-bottom: 4px;
 }

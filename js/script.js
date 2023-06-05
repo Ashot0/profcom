@@ -28,7 +28,31 @@ const isMobile = {
 
 
 const menu = document.getElementById('menu');
+const teamBoxes = document.getElementById('team__boxes')
+
 
 if (isMobile.any()) {
+	teamBoxes.classList.add('_short')
 	menu.classList.add('_hidden')
+}
+
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+if (menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener("click", onMenuLinkClick);
+	});
+
+	function onMenuLinkClick(e) {
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingCleintRect().top + pageYOffset;
+
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: 'smooth'
+			});
+			e.preventDefault();
+		}
+	}
 }

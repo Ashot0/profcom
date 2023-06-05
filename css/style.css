@@ -280,6 +280,7 @@ body a {
   font-size: 1.285rem;
   position: relative;
   z-index: 3;
+  text-align: center;
 }
 
 .what-we-do {
@@ -386,6 +387,10 @@ body a {
 
 .team__box_up {
   margin-top: 40px;
+}
+
+._up-team {
+  margin-bottom: 20px;
 }
 
 .team__img {

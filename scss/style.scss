@@ -196,6 +196,7 @@ body {
 	font-size: 1.285rem;
 	position: relative;
 	z-index: $z-wwd;
+	text-align: center;
 }
 
 .what-we-do {
@@ -296,6 +297,9 @@ body {
 }
 .team__box_up {
 	margin-top: 40px;
+}
+._up-team {
+	margin-bottom: 20px;
 }
 .team__img {
 	width: 225px;

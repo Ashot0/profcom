@@ -395,9 +395,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 165px;
+	min-height: 165px;
 }
 .footer__box {
+	margin: 10px 0;
 	width: 1504px;
 	display: flex;
 	justify-content: space-between;
@@ -432,6 +433,6 @@ body {
 	margin-bottom: 4px;
 }
 
-// @media (max-width: 1440px){
-
-// }
+.footer__icons-phone {
+	margin-top: 10px;
+}

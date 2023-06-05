@@ -159,6 +159,11 @@ body a {
   background-position: left -480px top 1175px;
 }
 
+@media (max-width: 1440px) {
+  .tiangle__2 {
+    background-position: left -880px top 1175px;
+  }
+}
 .tiangle__3 {
   pointer-events: none;
   position: absolute;
@@ -277,7 +282,7 @@ body a {
 
 .about-us__text {
   max-width: 736px;
-  padding-top: 8%;
+  padding-top: 7%;
   max-height: 525px;
   font-size: 1.285rem;
   position: relative;
@@ -288,6 +293,7 @@ body a {
 @media (min-width: 1440px) {
   .about-us__text {
     padding-left: 9%;
+    text-align: left;
   }
 }
 .what-we-do {
@@ -366,6 +372,7 @@ body a {
 .team__title {
   margin-top: 40px;
   margin-bottom: 88px;
+  z-index: 3;
 }
 
 .team__boxes {
@@ -374,6 +381,7 @@ body a {
   width: -moz-fit-content;
   width: fit-content;
   align-items: center;
+  justify-content: center;
   padding: auto;
   margin: 0 80px 156px 80px;
 }
@@ -452,10 +460,6 @@ body a {
   padding-left: 15px;
   margin-bottom: 16px;
 }
-.docs__text span {
-  display: inline-block;
-  padding-right: 7px;
-}
 
 .docs__link,
 .docs__text {
@@ -466,6 +470,10 @@ body a {
 
 .docs__link {
   text-decoration: underline;
+}
+.docs__link span {
+  display: inline-block;
+  padding-right: 7px;
 }
 
 .footer {

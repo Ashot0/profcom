@@ -122,8 +122,23 @@ body {
 	justify-content: space-between;
 }
 .menu__link {
+	position: relative;
 }
-
+.menu__link::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 0%;
+	height: 1.5px;
+	background-color: #eef3f4;
+}
+.menu__link:hover:before {
+	width: 100%;
+}
+.menu__link::before {
+	transition: width 0.35s;
+}
 .main {
 }
 

@@ -204,6 +204,28 @@ body a {
   justify-content: space-between;
 }
 
+.menu__link {
+  position: relative;
+}
+
+.menu__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 1.5px;
+  background-color: #eef3f4;
+}
+
+.menu__link:hover:before {
+  width: 100%;
+}
+
+.menu__link::before {
+  transition: width 0.35s;
+}
+
 .greating-page {
   display: flex;
   flex-direction: column;
@@ -400,10 +422,6 @@ body a {
   margin: 0 35.55px 0px 35.55px;
 }
 
-.team__box_up {
-  margin-top: 40px;
-}
-
 ._up-team {
   margin-bottom: 20px;
 }
@@ -485,10 +503,11 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 165px;
+  min-height: 165px;
 }
 
 .footer__box {
+  margin: 10px 0;
   width: 1504px;
   display: flex;
   justify-content: space-between;
@@ -523,4 +542,8 @@ body a {
 
 .footer__title_contacts {
   margin-bottom: 4px;
+}
+
+.footer__icons-phone {
+  margin-top: 10px;
 }

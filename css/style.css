@@ -175,6 +175,11 @@ body a {
   background-position: right -600px top 2620px;
 }
 
+@media (max-width: 1440px) {
+  .tiangle__3 {
+    background-position: right -600px top 2220px;
+  }
+}
 .tiangle__4 {
   pointer-events: none;
   position: absolute;
@@ -208,7 +213,7 @@ body a {
   position: relative;
 }
 
-.menu__link::before {
+.menu__link_pc::before {
   content: "";
   position: absolute;
   left: 0;
@@ -218,11 +223,11 @@ body a {
   background-color: #eef3f4;
 }
 
-.menu__link:hover:before {
+.menu__link_pc:hover:before {
   width: 100%;
 }
 
-.menu__link::before {
+.menu__link_pc::before {
   transition: width 0.35s;
 }
 

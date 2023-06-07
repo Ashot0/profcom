@@ -27,12 +27,12 @@ const isMobile = {
 };
 
 
-const menu = document.getElementById('menu');
 const teamBoxes = document.getElementById('team__boxes')
 const teamBoxUp1 = document.getElementById('team__box__up1')
 const teamBoxUp2 = document.getElementById('team__box__up2')
 const footerIconsPhone = document.getElementById('footer__icons-phone')
 const footerIconsPc = document.getElementById('footer__icons')
+const menuLinkPhoneArr = document.querySelectorAll('.menu__link')
 
 
 
@@ -40,12 +40,15 @@ if (isMobile.any()) {
 	teamBoxUp1.classList.add('_up-team')
 	teamBoxUp2.classList.add('_up-team')
 	teamBoxes.classList.add('_short')
-	menu.classList.add('_hidden')
 	footerIconsPc.classList.add('_hidden')
 } else {
 	footerIconsPhone.classList.add('_hidden')
+	menuLinkPhoneArr.forEach(element => element.classList.add('menu__link_pc'))
 }
 
+
+
+//скролл
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
